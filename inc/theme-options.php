@@ -2,7 +2,7 @@
 /**
  * Customizer Controls - Theme Options.
  *
- * @package Acelin
+ * @package Leah
  */
 
 // User access level
@@ -32,38 +32,15 @@ $options[] = array( 'title'             => __( 'Theme Options', 'leah' ),
 
 // Front Page - Section
 $options[] = array( 'title'             => __( 'Front Page', 'leah' ),
-                    'description'       => '',
+                    'description'       => __( 'Each section will be populated with the content of the selected page.', 'leah' ),
                     'panel'             => 'leah_theme_options',
                     'id'                => 'leah_fp_options',
                     'priority'          => 10,
                     'theme_supports'    => '',
                     'type'              => 'section' );
 
-// Front Page Sections
-$options[] = array( 'title'             => __( 'Number of Front Page Sections', 'leah' ),
-                    'description'       => __( 'Each section will be populated with the content of the selected page.', 'leah' ),
-                    'section'           => 'leah_fp_options',
-                    'id'                => 'leah_fp_sections',
-                    'default'           => '4',
-                    'option'            => 'select',
-                    'sanitize_callback' => '',
-                    'choices'           => array(
-                        '1' => __( '1 Section', 'leah' ),
-                        '2' => __( '2 Sections', 'leah' ),
-                        '3' => __( '3 Sections', 'leah' ),
-                        '4' => __( '4 Sections', 'leah' ),
-                        '5' => __( '5 Sections', 'leah' ),
-                        '6' => __( '6 Sections', 'leah' ),
-                        '7' => __( '7 Sections', 'leah' ),
-                        '8' => __( '8 Sections', 'leah' ),
-                        '9' => __( '9 Sections', 'leah' ),
-                        '10' => __( '10 Sections', 'leah' ),
-                    ),
-                    'type'              => 'control' );
-
 // Front Page Section Pages
-$front_page_sections = get_theme_mod( 'leah_fp_sections', 4 );
-for ( $i = 1; $i < $front_page_sections + 1; $i++ ) { 
+for ( $i = 1; $i < 11; $i++ ) { 
 
     $options[] = array( 'title'             => __( 'Front Page Section', 'leah' ) . ' ' . $i,
                         'description'       => '',
