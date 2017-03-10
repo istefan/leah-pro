@@ -184,14 +184,14 @@ function leah_fonts_url() {
     $fonts_url = '';
 
     /* Translators: If there are characters in your language that are not
-	 * supported by Roboto, translate this to 'off'. Do not translate
+	 * supported by Nunito, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$font = _x( 'on', 'Roboto font: on or off', 'leah' );
+	$font = _x( 'on', 'Nunito font: on or off', 'leah' );
 
 	if ( 'off' !== $font ) {
 		$font_families = array();
-		$font_families[] = 'Roboto:300,400,700,300italic,400italic,700italic';
+		$font_families[] = 'Nunito:300,400,700,300italic,400italic,700italic';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),

@@ -128,7 +128,7 @@ msgid "Sidebar Footer 4"
 msgstr ""
 
 #: functions.php:195
-msgctxt "Roboto font: on or off"
+msgctxt "Nunito font: on or off"
 msgid "on"
 msgstr ""
 

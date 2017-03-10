@@ -2,17 +2,18 @@
 	@include 				font-size(14);
 }
 
-.footer-sidebar,
 .content-sidebar {
-	@include 				font-size(14);
-	border-top: 			1px solid $gray-lightest;
+	@include 				font-size(15);
+	border-top: 			2px solid $gray-lightest;
 	padding-top: 			30px;
 }
 
 .footer-sidebar {
+	@include 				font-size(14);
 	padding-top: 			80px;
 	padding-bottom: 		40px;
-	background-color: 		$tertiary-color;
+	background-color: 		#f7f7f7;
+	border-top: 			1px solid #f4f4f4;
 }
 
 .widget-area {

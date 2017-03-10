@@ -1,10 +1,10 @@
 .site-header {
 	padding: 			15px 0;
-	background-color: 	#f9f9f9;
+	background-color: 	#f7f7f7;
 	width: 				$site-width-mobile;
 	position: 			fixed;
 	z-index: 			9999;
-	border-bottom: 		1px solid #f7f7f7;
+	border-bottom: 		1px solid #f4f4f4;
 }
 
 @media (min-width: $small-screen) {
@@ -34,7 +34,7 @@
 }
 
 .site-title {
-	font-family: 		"Roboto", Helvetica, Arial, sans-serif;
+	font-family: 		"Nunito", Helvetica, Arial, sans-serif;
 	@include 			font-size(28);
 	font-weight: 		700;
 	letter-spacing: 	1px;
