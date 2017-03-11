@@ -1170,7 +1170,7 @@ textarea:focus {
   padding: 30px 0;
 }
 
-body.page-template-page-front .site-content {
+body.page-template-template-front-page .site-content {
   max-width: 100%;
   padding: 0;
 }
@@ -1206,8 +1206,8 @@ body.page-template-page-front .site-content {
     float: right;
   }
 
-  body.page-template-page-no-sidebar .content-area,
-  body.no-sidebar .content-area,
+  body.page-template-template-no-sidebar .content-area,
+  body.post-template-template-no-sidebar .content-area,
   body.single-portfolio .content-area,
   body.woocommerce .content-area {
     float: none;
@@ -1216,8 +1216,9 @@ body.page-template-page-front .site-content {
   }
 
   body.post-type-archive-portfolio .content-area,
-  body.page-template-page-full .content-area,
-  body.page-template-page-front .content-area {
+  body.page-template-template-full-width .content-area,
+  body.post-template-template-full-width .content-area,
+  body.page-template-template-front-page .content-area {
     width: 100%;
   }
 }
@@ -1550,6 +1551,11 @@ body.page-template-page-front .site-content {
     font-size: 3.2rem;
   }
 }
+body.page-template-template-no-sidebar .entry-header,
+body.post-template-template-no-sidebar .entry-header {
+  text-align: center;
+}
+
 .page-title {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1790,14 +1796,14 @@ body.single-portfolio img.portfolio-thumbnail {
 /*--------------------------------------------------------------
 ## Front Page
 --------------------------------------------------------------*/
-body.page-template-page-front .hentry {
+body.page-template-template-front-page .hentry {
   border-bottom: none;
   margin-bottom: 0;
 }
-body.page-template-page-front .front-page-sections h1, body.page-template-page-front .front-page-sections h2, body.page-template-page-front .front-page-sections h3, body.page-template-page-front .front-page-sections h4, body.page-template-page-front .front-page-sections h5, body.page-template-page-front .front-page-sections h6 {
+body.page-template-template-front-page .front-page-sections h1, body.page-template-template-front-page .front-page-sections h2, body.page-template-template-front-page .front-page-sections h3, body.page-template-template-front-page .front-page-sections h4, body.page-template-template-front-page .front-page-sections h5, body.page-template-template-front-page .front-page-sections h6 {
   font-weight: 700;
 }
-body.page-template-page-front .front-page-section {
+body.page-template-template-front-page .front-page-section {
   padding-top: 60px;
   padding-bottom: 40px;
   background-repeat: no-repeat;
@@ -1806,7 +1812,7 @@ body.page-template-page-front .front-page-section {
   -o-background-size: cover;
   background-size: cover;
 }
-body.page-template-page-front .front-page-section-1 {
+body.page-template-template-front-page .front-page-section-1 {
   background-color: #e2e2e2;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -1814,26 +1820,26 @@ body.page-template-page-front .front-page-section-1 {
   font-size: 18px;
   font-size: 1.8rem;
 }
-body.page-template-page-front .front-page-section-1 h1, body.page-template-page-front .front-page-section-1 h2, body.page-template-page-front .front-page-section-1 h3, body.page-template-page-front .front-page-section-1 h4, body.page-template-page-front .front-page-section-1 h5, body.page-template-page-front .front-page-section-1 h6 {
+body.page-template-template-front-page .front-page-section-1 h1, body.page-template-template-front-page .front-page-section-1 h2, body.page-template-template-front-page .front-page-section-1 h3, body.page-template-template-front-page .front-page-section-1 h4, body.page-template-template-front-page .front-page-section-1 h5, body.page-template-template-front-page .front-page-section-1 h6 {
   color: #16a085;
 }
-body.page-template-page-front .front-page-section-1 h2 {
+body.page-template-template-front-page .front-page-section-1 h2 {
   font-size: 44px;
 }
-body.page-template-page-front .front-page-section-3 {
+body.page-template-template-front-page .front-page-section-3 {
   background-color: #f7f7f7;
 }
 
 @media (min-width: 992px) {
-  body.page-template-page-front .front-page-section {
+  body.page-template-template-front-page .front-page-section {
     padding-top: 100px;
     padding-bottom: 80px;
   }
-  body.page-template-page-front .front-page-section-1 {
+  body.page-template-template-front-page .front-page-section-1 {
     padding-top: 150px;
     padding-bottom: 130px;
   }
-  body.page-template-page-front .front-page-section-1 h2 {
+  body.page-template-template-front-page .front-page-section-1 h2 {
     font-size: 54px;
   }
 }

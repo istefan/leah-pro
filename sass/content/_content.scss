@@ -45,6 +45,13 @@
 	}
 }
 
+body.page-template-template-no-sidebar,
+body.post-template-template-no-sidebar {
+	.entry-header {
+		text-align: 		center;
+	}
+}
+
 .page-title {
 	@include 				font-size(18);
 	padding-bottom: 		24px;
