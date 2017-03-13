@@ -29,4 +29,5 @@
 	<footer class="entry-footer">
 		<?php leah_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	
 </article><!-- #post-## -->

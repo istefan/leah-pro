@@ -1,12 +1,44 @@
 <?php
 /**
- * Customizer Control Examples.
+ * Customizer Controls.
  *
- * @package Leah
+ * @package WPshed Customizer Framework
  */
 
+// User access level
+$capability = 'edit_theme_options';
+
+// Option type
+$type = 'theme_mod'; // option / theme_mod
+
 /* ---------------------------------------------------------------------------------------------------
-    Examples
+    Panels
+--------------------------------------------------------------------------------------------------- */
+
+// Panel
+$options[] = array( 'title'             => __( 'Theme Options', 'leah' ),
+                    'description'       => '',
+                    'id'                => 'leah_theme_options',
+                    'priority'          => 10,
+                    'theme_supports'    => '',
+                    'type'              => 'panel' );
+
+
+/* ---------------------------------------------------------------------------------------------------
+    Sections
+--------------------------------------------------------------------------------------------------- */
+
+// Section
+$options[] = array( 'title'             => __( 'Test Section', 'leah' ),
+                    'description'       => __( 'Section description', 'leah' ),
+                    'panel'             => 'leah_theme_options',
+                    'id'                => 'leah_section_id',
+                    'priority'          => 10,
+                    'theme_supports'    => '',
+                    'type'              => 'section' );
+
+/* ---------------------------------------------------------------------------------------------------
+    Controls
 --------------------------------------------------------------------------------------------------- */
 
 // Text
@@ -99,11 +131,10 @@ $options[] = array( 'title'             => __( 'File Upload Field', 'leah' ),
                     'sanitize_callback' => '',
                     'type'              => 'control' );
 
-
 // URL
 $options[] = array( 'title'             => __( 'URL Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_2',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_url',
                     'default'           => '',
                     'option'            => 'url',
@@ -113,7 +144,7 @@ $options[] = array( 'title'             => __( 'URL Field', 'leah' ),
 // Email
 $options[] = array( 'title'             => __( 'Email Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_2',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_email',
                     'default'           => '',
                     'option'            => 'email',
@@ -123,7 +154,7 @@ $options[] = array( 'title'             => __( 'Email Field', 'leah' ),
 // Password
 $options[] = array( 'title'             => __( 'Password Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_2',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_password',
                     'default'           => '',
                     'option'            => 'password',
@@ -133,7 +164,7 @@ $options[] = array( 'title'             => __( 'Password Field', 'leah' ),
 // number
 $options[] = array( 'title'             => __( 'number Field (px)', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_2',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_number',
                     'default'           => 70,
                     'option'            => 'number',
@@ -149,7 +180,7 @@ $options[] = array( 'title'             => __( 'number Field (px)', 'leah' ),
 // Pages
 $options[] = array( 'title'             => __( 'Pages Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_pages',
                     'default'           => 0,
                     'option'            => 'pages',
@@ -159,7 +190,7 @@ $options[] = array( 'title'             => __( 'Pages Field', 'leah' ),
 // Categories
 $options[] = array( 'title'             => __( 'Categories Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_categories',
                     'default'           => 0,
                     'option'            => 'categories',
@@ -169,7 +200,7 @@ $options[] = array( 'title'             => __( 'Categories Field', 'leah' ),
 // Tags
 $options[] = array( 'title'             => __( 'Tags Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_tags',
                     'default'           => '',
                     'option'            => 'tags',
@@ -179,7 +210,7 @@ $options[] = array( 'title'             => __( 'Tags Field', 'leah' ),
 // Post Types
 $options[] = array( 'title'             => __( 'Post Types Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_post_types',
                     'default'           => '',
                     'option'            => 'post_types',
@@ -189,7 +220,7 @@ $options[] = array( 'title'             => __( 'Post Types Field', 'leah' ),
 // Posts
 $options[] = array( 'title'             => __( 'Posts Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_posts',
                     'default'           => '',
                     'option'            => 'posts',
@@ -199,7 +230,7 @@ $options[] = array( 'title'             => __( 'Posts Field', 'leah' ),
 // Users
 $options[] = array( 'title'             => __( 'Users Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_users',
                     'default'           => '',
                     'option'            => 'users',
@@ -209,12 +240,9 @@ $options[] = array( 'title'             => __( 'Users Field', 'leah' ),
 // Menus
 $options[] = array( 'title'             => __( 'Menus Field', 'leah' ),
                     'description'       => '',
-                    'section'           => 'leah_section_3',
+                    'section'           => 'leah_section_id',
                     'id'                => 'leah_menus',
                     'default'           => '',
                     'option'            => 'menus',
                     'sanitize_callback' => '',
                     'type'              => 'control' );
-
-
-             
